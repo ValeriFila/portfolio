@@ -1,5 +1,6 @@
-import CustomInput from "../CustomInput/CustomInput";
+import CustomInput from '../CustomInput/CustomInput'
 import './Form.scss'
+
 export default function Form() {
     return (
         <form className='custom-form'>

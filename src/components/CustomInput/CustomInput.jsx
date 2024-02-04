@@ -1,5 +1,6 @@
 import './CustomInput.scss'
-import clsx from "clsx";
+import clsx from 'clsx'
+
 export default function CustomInput(props) {
     const {
         label,
@@ -8,6 +9,7 @@ export default function CustomInput(props) {
         className,
         isMultiline
     } = props
+
     return (
         <div className='custom-input'>
             <label className='custom-input__label'>{label}</label>

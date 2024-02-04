@@ -1,7 +1,8 @@
 import MainSections from './subComponents/MainSections/MainSections'
 import './Header.scss'
 import img from '../../assets/icons/logo.svg'
-import MailButton from "../MailButton/MailButton";
+import MailButton from '../MailButton/MailButton'
+
 export default function Header() {
     return (
         <header className='section-header'>
