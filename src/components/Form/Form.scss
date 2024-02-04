@@ -1,0 +1,32 @@
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  gap: 2rem;
+  width: 50svw;
+  margin-top: 100px;
+
+  &__input--big{
+    height: 165px;
+
+    &::placeholder {
+      font-size: 16px;
+      padding-left: 10px;
+      padding-top: 10px;
+      color: rgba(77, 77, 77, 1);
+    }
+  }
+
+  &__block-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+  }
+}
+
+
