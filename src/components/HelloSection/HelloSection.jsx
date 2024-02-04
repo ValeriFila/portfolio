@@ -22,9 +22,21 @@ export default function HelloSection() {
             >
                 НАПИСАТЬ МНЕ
             </MailButton>
-            <img src={imgSwirl} alt='swirl' className='hello-box__img-swirl'/>
-            <img src={imgStars} alt='stars' className='hello-box__img-stars'/>
-            <img src={imgScribble} alt='scribble' className='hello-box__img-scribble'/>
+            <img
+                src={imgSwirl}
+                alt='swirl'
+                className='hello-box__img-swirl'
+            />
+            <img
+                src={imgStars}
+                alt='stars'
+                className='hello-box__img-stars'
+            />
+            <img
+                src={imgScribble}
+                alt='scribble'
+                className='hello-box__img-scribble'
+            />
         </div>
     )
 }
