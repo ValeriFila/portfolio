@@ -7,7 +7,7 @@ export default function CustomInput(props) {
         value,
         id,
         className,
-        isMultiline
+        isMultiline,
     } = props
 
     return (
