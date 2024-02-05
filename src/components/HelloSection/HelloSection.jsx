@@ -14,7 +14,7 @@ export default function HelloSection() {
                 я Лера
             </p>
             <p className='hello-box__description'>
-                Веб-разработчик из <br/> Санкт-Петербурга
+                Веб-разработчица из <br/> Санкт-Петербурга
             </p>
             <MailButton
                 theme='bigger'

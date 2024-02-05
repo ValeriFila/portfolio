@@ -1,6 +1,7 @@
 .custom-input {
   display: flex;
   flex-direction: column;
+  outline: none;
   font-size: 16px;
   flex: 1;
 
@@ -17,13 +18,13 @@
     padding: 0 20px;
     font-size: 16px;
 
-    &--big {
-      height: 165px;
-    }
-
     &::placeholder {
       font-size: 16px;
       color: rgba(77, 77, 77, 1);
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 }

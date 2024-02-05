@@ -1,41 +1,36 @@
 import './CustomInput.scss'
 import clsx from 'clsx'
-import {useState} from 'react'
+import {useEffect, useRef, useState} from 'react'
 
 export default function CustomInput(props) {
     const {
-        label,
-        value,
         id,
+        label,
         className,
         isMultiline,
+        value,
+        onChange,
     } = props
-
-    const [text, setText] = useState('')
-
-    function handleChange(event) {
-        setText(event.target.value)
-    }
 
     return (
         <div className='custom-input'>
             <label className='custom-input__label'>{label}</label>
             {!isMultiline ? (
                 <input
+                    id={id}
                     className={clsx('custom-input__input', className)}
                     type='text'
-                    id={id}
                     value={value}
                     placeholder={`Введи ${label.toLowerCase()}...`}
-                    onChange={handleChange}
+                    onChange={(e) => onChange(e)}
                 />
             ) : (
                 <textarea
-                    className={clsx('custom-input__input', className)}
                     id={id}
+                    className={clsx('custom-input__input', className)}
                     value={value}
                     placeholder={`Введи ${label.toLowerCase()}...`}
-                    onChange={handleChange}
+                    onChange={(e) => onChange(e)}
                 />
             )}
         </div>

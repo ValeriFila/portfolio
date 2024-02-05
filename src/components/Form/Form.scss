@@ -8,7 +8,14 @@
   width: 50svw;
   margin-top: 4rem;
 
-  &__input--big{
+  &__input {
+    &--error {
+      //background-color: rgb(255, 195, 188);
+      border-color: rgba(205, 70, 49, 1);
+    }
+  }
+
+  &__text-area{
     height: 165px;
     resize: none;
     padding: 20px;
