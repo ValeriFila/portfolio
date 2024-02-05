@@ -6,15 +6,15 @@
   text-align: start;
   gap: 2rem;
   width: 50svw;
-  margin-top: 100px;
+  margin-top: 4rem;
 
   &__input--big{
     height: 165px;
+    resize: none;
+    padding: 20px;
 
     &::placeholder {
       font-size: 16px;
-      padding-left: 10px;
-      padding-top: 20px;
       color: rgba(77, 77, 77, 1);
     }
   }
@@ -26,6 +26,14 @@
     flex-direction: row;
     gap: 2rem;
     width: 100%;
+  }
+
+  &__line{
+    height: 1px;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+    background-color: rgba(77, 77, 77, 1);
   }
 }
 
