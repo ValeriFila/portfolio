@@ -3,6 +3,7 @@ import './HelloSection.scss'
 import imgSwirl from '../../assets/icons/Hero Shape Swirl.png'
 import imgStars from '../../assets/icons/Group 48095792.png'
 import imgScribble from '../../assets/icons/Scribble.png'
+import {useRef} from 'react'
 
 export default function HelloSection() {
     return (

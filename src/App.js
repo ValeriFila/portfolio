@@ -16,7 +16,7 @@ export default function App() {
             <CustomSection>
                 <Title
                     text='Связаться со мной'
-                    subText='оставь свои контакты и я обязательно тебе отвечу '
+                    subText='оставь свои контакты и я обязательно тебе отвечу'
                 />
                 <Form />
             </CustomSection>
