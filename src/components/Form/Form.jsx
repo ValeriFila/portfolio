@@ -3,19 +3,36 @@ import './Form.scss'
 import MailButton from '../MailButton/MailButton'
 import {useRef, useState} from 'react'
 import clsx from 'clsx'
+import emailjs from '@emailjs/browser'
 
 export default function Form() {
     const [error, setError] = useState(false)
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const formRef = useRef()
 
     function handleSubmit(event) {
         event.preventDefault()
+        const sendEmail = (e) => {
+            e.preventDefault()
+
+            emailjs.sendForm(
+                'service_qjuy5q7',
+                'template_r4pm2r4',
+                formRef.current,
+                'Zd3qQcdr7J8xZSumK')
+                .then((result) => {
+                    console.log(result) //сделать обработчик
+                }, (error) => {
+                    console.log(error) //сделать обработчик
+                })
+        }
+
         if (name.trim().length === 0 || email.trim().length === 0 || message.trim().length === 0) {
             setError(true)
         } else {
-            console.log('sending message...')
+            sendEmail(event)
             setError(false)
             setName('')
             setEmail('')
@@ -37,6 +54,7 @@ export default function Form() {
 
     return (
         <form
+            ref={formRef}
             className='custom-form'
             onSubmit={(event) => handleSubmit(event)}
         >
@@ -44,6 +62,7 @@ export default function Form() {
             <div className='custom-form__block-input'>
                 <CustomInput
                     id='name'
+                    name='name'
                     label='Имя'
                     value={name}
                     className={clsx(
@@ -55,6 +74,7 @@ export default function Form() {
                 />
                 <CustomInput
                     id='email'
+                    name='email'
                     label='Email'
                     value={email}
                     className={clsx(
@@ -68,6 +88,8 @@ export default function Form() {
             <div className='custom-form__block-input'>
                 <CustomInput
                     id='message'
+                    name='message'
+                    label='Сообщение'
                     value={message}
                     className={clsx(
                         'custom-form__text-area',
@@ -75,7 +97,6 @@ export default function Form() {
                             'custom-form__input--error': error && message.trim().length === 0,
                         },
                     )}
-                    label='Сообщение'
                     isMultiline={true}
                     onChange={handleChangeMessage}
                 />

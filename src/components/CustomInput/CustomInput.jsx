@@ -5,6 +5,7 @@ import {useEffect, useRef, useState} from 'react'
 export default function CustomInput(props) {
     const {
         id,
+        name,
         label,
         className,
         isMultiline,
@@ -18,6 +19,7 @@ export default function CustomInput(props) {
             {!isMultiline ? (
                 <input
                     id={id}
+                    name={name}
                     className={clsx('custom-input__input', className)}
                     type='text'
                     value={value}
@@ -27,6 +29,7 @@ export default function CustomInput(props) {
             ) : (
                 <textarea
                     id={id}
+                    name={name}
                     className={clsx('custom-input__input', className)}
                     value={value}
                     placeholder={`Введи ${label.toLowerCase()}...`}
