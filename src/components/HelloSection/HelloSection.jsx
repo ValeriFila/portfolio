@@ -5,7 +5,11 @@ import imgStars from '../../assets/icons/Group 48095792.png'
 import imgScribble from '../../assets/icons/Scribble.png'
 import {useRef} from 'react'
 
-export default function HelloSection() {
+export default function HelloSection(props) {
+    const {
+        onClick,
+    } = props
+
     return (
         <div className='hello-box'>
             <p className='hello-box__text'>
@@ -20,6 +24,7 @@ export default function HelloSection() {
             <MailButton
                 theme='bigger'
                 className='hello-box__button'
+                onClick={onClick}
             >
                 НАПИСАТЬ МНЕ
             </MailButton>

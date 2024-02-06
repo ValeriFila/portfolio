@@ -6,11 +6,24 @@ import Title from "./components/Title/Title";
 import Form from "./components/Form/Form";
 
 export default function App() {
+    function handleClickScrollToForm() {
+        console.log('scroll to the form...')
+    }
+
+    function handleClickScrollToExample() {
+        console.log('scroll to the examples...')
+    }
+
     return (
         <div className="App">
             <CustomSection theme='orange'>
-                <Header />
-                <HelloSection />
+                <Header
+                    onClickExamples={handleClickScrollToExample}
+                    onClickForm={handleClickScrollToForm}
+                />
+                <HelloSection
+                    onClick={handleClickScrollToForm}
+                />
             </CustomSection>
 
             <CustomSection>
