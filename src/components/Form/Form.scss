@@ -4,14 +4,19 @@
   justify-content: center;
   align-items: center;
   text-align: start;
+  position: relative;
   gap: 2rem;
-  width: 50svw;
+  width: 900px;
   margin-top: 4rem;
 
   &__input {
     &--error {
       //background-color: rgb(255, 195, 188);
       border-color: rgba(205, 70, 49, 1);
+    }
+
+    &--required {
+      color: rgba(205, 70, 49, 1);
     }
   }
 
@@ -41,6 +46,20 @@
     border: none;
     margin-bottom: 20px;
     background-color: rgba(77, 77, 77, 1);
+  }
+
+  &__stars {
+    position: absolute;
+    width: 6rem;
+    right: -16rem;
+    top: 0;
+  }
+
+  &__spring{
+    position: absolute;
+    width: 12rem;
+    left: -23rem;
+    bottom: -4rem;
   }
 }
 

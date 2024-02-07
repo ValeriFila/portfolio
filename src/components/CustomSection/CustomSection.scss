@@ -1,10 +1,10 @@
 .custom-section {
   display: flex;
   align-items: center;
+  justify-content: center; 
   flex-direction: column;
   background-color: white;
   height: 100vh;
-
 
   &--orange {
     background-color: rgba(247, 237, 232, 1);

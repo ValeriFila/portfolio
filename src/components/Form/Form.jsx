@@ -4,6 +4,8 @@ import MailButton from '../MailButton/MailButton'
 import {useRef, useState} from 'react'
 import clsx from 'clsx'
 import emailjs from '@emailjs/browser'
+import stars from '../../assets/icons/Shining stars.png'
+import spring from '../../assets/icons/Vector 4.png'
 
 export default function Form() {
     const [error, setError] = useState(false)
@@ -106,6 +108,8 @@ export default function Form() {
             >
                 ОТПРАВИТЬ СООБЩЕНИЕ
             </MailButton>
+            <img src={stars} alt='stars' className='custom-form__stars'/>
+            <img src={spring} alt='spring' className='custom-form__spring'/>
         </form>
     )
 }

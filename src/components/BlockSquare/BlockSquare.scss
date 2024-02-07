@@ -1,0 +1,21 @@
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    gap: 2em;
+
+    &__square {
+        display: flex;
+        height: 280px;
+        width: 280px;
+        border: 2px solid black;
+        border-radius: 8px;
+
+        &--orange {
+            background-color: rgba(247, 237, 232, 1);
+            border-color: rgba(205, 70, 49, 1);
+        }
+    }
+
+}

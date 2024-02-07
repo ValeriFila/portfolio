@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+
+  &__title {
+    position: relative;
+
+    &--scribble {
+      position: absolute;
+      width: 20rem;
+      right: -8rem;
+      top: -12rem;
+    }
+
+    &--vector {
+      position: absolute;
+      width: 7rem;
+      right: 8rem;
+      top: -2rem;
+    }
+
+    &--sparkle {
+      position: absolute;
+      width: 10rem;
+      left: 15rem;
+      top: -5rem;
+    }
+  }
+}
+
+
+

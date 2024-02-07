@@ -1,0 +1,38 @@
+.all-technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    gap: 5rem;
+
+    &__images {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 7rem;
+        row-gap: 4rem;
+        flex-direction: row;
+        margin-top: 4rem;
+
+    }
+
+    &__vector {
+        position: absolute;
+        width: 6rem;
+        rotate: 15deg;
+        right: -7rem;
+        bottom: -3rem;
+    }
+
+    &__stars {
+        display: block;
+        position: absolute;
+        width: 6rem;
+        left: -5rem;
+        top: -5rem;
+    }
+
+}

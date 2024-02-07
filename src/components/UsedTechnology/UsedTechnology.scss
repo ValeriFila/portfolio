@@ -1,0 +1,17 @@
+.technology {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    gap: 1.8rem;
+
+    &__image {
+        width: 62px;
+    }
+
+    &__description {
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
