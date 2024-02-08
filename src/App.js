@@ -58,7 +58,9 @@ export default function App() {
                     text='Прайс-лист'
                     subText='*цены примерные и возможно будут отличаться в зависимости от сложности проекта '
                 />
-                <PriceList></PriceList>
+                <PriceList
+                    onClick={handleClickScrollToForm}
+                ></PriceList>
             </CustomSection>
 
             <CustomSection refer={sectionRef}>
