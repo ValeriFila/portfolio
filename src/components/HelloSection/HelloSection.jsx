@@ -2,8 +2,7 @@ import MailButton from '../MailButton/MailButton'
 import './HelloSection.scss'
 import imgSwirl from '../../assets/icons/Hero Shape Swirl.png'
 import imgStars from '../../assets/icons/Group 48095792.png'
-import imgScribble from '../../assets/icons/Scribble.png'
-import {useRef} from 'react'
+import imgScribble from '../../assets/icons/Scribble5.png'
 
 export default function HelloSection(props) {
     const {

@@ -13,6 +13,7 @@ import BlockSquare from './components/BlockSquare/BlockSquare'
 import PriceList from './components/PriceList/PriceList'
 import imgScribble from './assets/icons/Scribble.png'
 import QuotesBlock from './components/QuotesBlock/QuotesBlock'
+import CustomFooter from './components/CustomFooter/CustomFooter'
 
 export default function App() {
     const sectionRef = useRef()
@@ -83,6 +84,8 @@ export default function App() {
                 />
                 <Form />
             </CustomSection>
+
+            <CustomFooter></CustomFooter>
         </div>
 
     )
