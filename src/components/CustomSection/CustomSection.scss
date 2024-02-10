@@ -8,5 +8,10 @@
 
   &--orange {
     background-color: rgba(247, 237, 232, 1);
+    position: relative;
+  }
+
+  &--little {
+    height: 30vh;
   }
 }

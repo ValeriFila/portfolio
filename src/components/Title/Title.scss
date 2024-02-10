@@ -1,5 +1,8 @@
 .title {
-  //padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 1000px;
   position: relative;
 
@@ -10,6 +13,7 @@
   }
 
   &__sub-text {
+    width: 800px;
     font-size: 23px;
     color: rgba(77, 77, 77, 1);
   }

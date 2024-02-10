@@ -12,6 +12,7 @@ import sparkle from '../src/assets/icons/Sparkle.png'
 import BlockSquare from './components/BlockSquare/BlockSquare'
 import PriceList from './components/PriceList/PriceList'
 import imgScribble from './assets/icons/Scribble.png'
+import QuotesBlock from './components/QuotesBlock/QuotesBlock'
 
 export default function App() {
     const sectionRef = useRef()
@@ -47,6 +48,14 @@ export default function App() {
                 <AllTechnologies
                     onClick={handleClickScrollToForm}
                 />
+            </CustomSection>
+
+            <CustomSection
+                theme='little'
+            >
+                <QuotesBlock>
+
+                </QuotesBlock>
             </CustomSection>
 
             <CustomSection>

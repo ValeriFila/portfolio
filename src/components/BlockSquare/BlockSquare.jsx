@@ -9,6 +9,7 @@ export default function BlockSquare(props) {
         price,
         popular,
         onClick,
+        typeOfSite
     } = props
 
     return (
@@ -37,7 +38,10 @@ export default function BlockSquare(props) {
                 </div>
             </div>
             <div className={clsx('rectangle__square' , theme && `rectangle__square--orange`)}>
-
+                <div className='rectangle__includes'>
+                    <p className='rectangle__includes--label'>Что включено:</p>
+                    <ul className='rectangle__includes--ul'>{typeOfSite}</ul>
+                </div>
             </div>
         </div>
     )

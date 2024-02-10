@@ -3,4 +3,22 @@
     flex-direction: row;
     gap: 2rem;
     margin-top: 3rem;
+    position: relative;
+    z-index: 1;
+
+    &__image-vector {
+        position: absolute;
+        left: -5rem;
+        bottom: -5rem;
+        width: 10rem;
+        z-index: -1;
+    }
+
+    &__image-star {
+        position: absolute;
+        right: -5rem;
+        top: -4.5rem;
+        width: 10rem;
+        z-index: -1;
+    }
 }

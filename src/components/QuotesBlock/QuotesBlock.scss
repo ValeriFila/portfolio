@@ -1,0 +1,52 @@
+.quotes-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(247, 237, 232, 1);
+    width: 900px;
+    height: 80%;
+    position: relative;
+
+    &__star {
+        position: absolute;
+        width: 8rem;
+        top: -4rem;
+        left: -3rem;
+    }
+
+    &__spring {
+        position: absolute;
+        width: 7rem;
+        bottom: -2rem;
+        right: -2rem;
+    }
+
+    &__vector {
+        position: absolute;
+        width: 8rem;
+        bottom: -4rem;
+    }
+
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        position: relative;
+
+        &--image {
+            width: 12rem;
+            position: absolute;
+            transform: scale(-1, 1);
+            top: -6.5rem;
+            right: 1rem;
+        }
+
+        &--text {
+            width: 80%;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+}
