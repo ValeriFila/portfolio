@@ -8,6 +8,7 @@
   gap: 2rem;
   width: 900px;
   margin-top: 4rem;
+  transition: all 0.5s;
 
   &__input {
     &--error {
@@ -61,5 +62,34 @@
     bottom: -4rem;
   }
 }
+
+@media (max-width: 1600px) {
+  .custom-form {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .custom-form {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .custom-form {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .custom-form {
+    width: 600px;
+  }
+  .custom-form__spring {
+    left: -18rem;
+  }
+}
+
+
 
 

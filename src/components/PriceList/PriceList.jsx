@@ -67,8 +67,16 @@ export default function PriceList(props) {
                 onClick={onClick}
                 typeOfSite={onlineShop}
             ></BlockSquare>
-            <img src={vector4} alt='vecor' className='price-list__image-vector'/>
-            <img src={star4} alt='star' className='price-list__image-star'/>
+            <img
+                src={vector4}
+                alt='vecor'
+                className='price-list__image-vector'
+            />
+            <img
+                src={star4}
+                alt='star'
+                className='price-list__image-star'
+            />
         </div>
     )
 }
