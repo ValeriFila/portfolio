@@ -10,6 +10,7 @@
     width: 100%;
     border-top: 1px solid rgba(77, 77, 77, 1);
     gap: 3rem;
+    transition: all 0.5s;
 
     &__primary {
         display: flex;
@@ -127,5 +128,16 @@
             justify-content: space-between;
             align-items: center;
         }
+    }
+}
+
+@media (max-width: 1200px) {
+    .custom-footer__primary {
+        width: 90%;
+        transition: all 0.5s;
+    }
+    .custom-footer__underline {
+        width: 90%;
+        transition: all 0.5s;
     }
 }

@@ -31,15 +31,15 @@ export default function PriceList(props) {
     }
 
     const multipage = includes['multi-page'].map((item) =>
-        <li>{item}</li>
+        <li key={item}>{item}</li>
     )
 
     const landing = includes['landing'].map((item) =>
-        <li>{item}</li>
+        <li key={item}>{item}</li>
     )
 
     const onlineShop = includes['online-shop'].map((item) =>
-        <li>{item}</li>
+        <li key={item}>{item}</li>
     )
 
     return (

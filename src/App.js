@@ -26,7 +26,7 @@ export default function App() {
     }
 
     return (
-        <div className="App">
+        <div className="app">
             <CustomSection theme='orange'>
                 <Header
                     onClickExamples={handleClickScrollToExample}
@@ -39,8 +39,8 @@ export default function App() {
 
             <CustomSection>
                 <Title
-                    className='App__title'
-                    classNameImage='App__title--scribble'
+                    className='app__title'
+                    classNameImage='app__title__scribble'
                     src={scribble}
                     alt='scribble'
                     text='Я занимаюсь разработкой веб-приложений'
@@ -61,8 +61,8 @@ export default function App() {
 
             <CustomSection>
                 <Title
-                    className='App__title'
-                    classNameImage='App__title--sparkle'
+                    className='app__title'
+                    classNameImage='app__title__sparkle'
                     src={sparkle}
                     alt='sparkle'
                     text='Прайс-лист'
@@ -75,8 +75,8 @@ export default function App() {
 
             <CustomSection refer={sectionRef}>
                 <Title
-                    className='App__title'
-                    classNameImage='App__title--vector'
+                    className='app__title'
+                    classNameImage='app__title__vector'
                     src={vector}
                     alt='vector'
                     text='Связаться со мной'

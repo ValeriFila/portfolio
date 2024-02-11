@@ -90,6 +90,20 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .custom-form__spring {
+    left: -15rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .custom-form__spring {
+    left: -12rem;
+  }
+  .custom-form__stars {
+    right: -12rem;
+  }
+}
 
 
 

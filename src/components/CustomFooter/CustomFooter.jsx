@@ -16,6 +16,7 @@ export default function CustomFooter() {
     ]
     const socialMediaMapped = socialMedia.map((img) => (
         <img
+            key={img.toString()}
             src={img}
             alt='img'
             className='custom-footer__primary__main-info__social__img'
@@ -29,6 +30,7 @@ export default function CustomFooter() {
     ]
     const platformsMapped = platforms.map((img) => (
         <img
+            key={img.toString()}
             src={img}
             alt='img'
             className='custom-footer__primary__support__images__img'
@@ -44,7 +46,12 @@ export default function CustomFooter() {
         'Блог',
     ]
     const linksMapped = links.map((link) => (
-        <p className='custom-footer__primary__units__links-block__link'>{link}</p>
+        <p
+            key={link}
+            className='custom-footer__primary__units__links-block__link'
+        >
+            {link}
+        </p>
     ))
 
     return (

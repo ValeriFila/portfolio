@@ -5,6 +5,7 @@
   align-items: center;
   width: 1000px;
   position: relative;
+  transition: all 0.5s;
 
   &__text {
     font-weight: bold;
@@ -16,5 +17,15 @@
     width: 800px;
     font-size: 23px;
     color: rgba(77, 77, 77, 1);
+  }
+}
+
+@media (max-width: 1300px) {
+  .title {
+    width: 800px;
+
+    &__text {
+      font-size: 50px;
+    }
   }
 }

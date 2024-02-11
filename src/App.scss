@@ -1,29 +1,41 @@
-.App {
+.app {
   text-align: center;
 
   &__title {
     position: relative;
 
-    &--scribble {
+    &__scribble {
       position: absolute;
       width: 20rem;
       right: -8rem;
       top: -12rem;
     }
 
-    &--vector {
+    &__vector {
       position: absolute;
       width: 7rem;
       right: 8rem;
       top: -2rem;
     }
 
-    &--sparkle {
+    &__sparkle {
       position: absolute;
       width: 10rem;
       left: 15rem;
       top: -5rem;
     }
+  }
+}
+
+@media (max-width: 1300px) {
+  .app__title__scribble {
+    right: -8rem;
+  }
+  .app__title__sparkle {
+    left: 10rem;
+  }
+  .app__title__vector {
+    right: 5rem;
   }
 }
 
