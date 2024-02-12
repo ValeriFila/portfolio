@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.63dd3496.css",
+    "main.js": "/portfolio/static/js/main.8536e893.js",
+    "static/media/MontserratAlternates-Regular.ttf": "/portfolio/static/media/MontserratAlternates-Regular.9e32cee38e5268e05e87.ttf",
+    "static/media/MontserratAlternates-Bold.ttf": "/portfolio/static/media/MontserratAlternates-Bold.d7493a864919adf4e311.ttf",
+    "static/media/MontserratAlternates-Medium.ttf": "/portfolio/static/media/MontserratAlternates-Medium.bc63100a95ff89321460.ttf",
+    "static/media/Hero Shape Swirl.png": "/portfolio/static/media/Hero Shape Swirl.5f078cf44f07d30d9f88.png",
+    "static/media/Group 48095792.png": "/portfolio/static/media/Group 48095792.e5e6b68d79eb74ee3c41.png",
+    "static/media/Vector 4 (1).png": "/portfolio/static/media/Vector 4 (1).184fd054b047b0044aa2.png",
+    "static/media/Vector 4.png": "/portfolio/static/media/Vector 4.1baed77955499288b2d0.png",
+    "static/media/Scribble (1).png": "/portfolio/static/media/Scribble (1).0ee61c3b782cb1f37563.png",
+    "static/media/Scribble.png": "/portfolio/static/media/Scribble.acc86baf5ce03467dc28.png",
+    "static/media/Star 4.png": "/portfolio/static/media/Star 4.f3718dbd6d5856f41afe.png",
+    "static/media/teenyicons_react-outline.png": "/portfolio/static/media/teenyicons_react-outline.73f4c82ad3755a5105a8.png",
+    "static/media/Scribble5.png": "/portfolio/static/media/Scribble5.c5ac4dde2f1b7315a570.png",
+    "static/media/logo.svg": "/portfolio/static/media/logo.149e693714daf9dc66716fbf44c0e05e.svg",
+    "index.html": "/portfolio/index.html",
+    "main.63dd3496.css.map": "/portfolio/static/css/main.63dd3496.css.map",
+    "main.8536e893.js.map": "/portfolio/static/js/main.8536e893.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63dd3496.css",
+    "static/js/main.8536e893.js"
+  ]
+}
